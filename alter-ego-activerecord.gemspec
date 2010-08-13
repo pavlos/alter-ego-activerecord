@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = %q{Adapter to allow ActiveRecord to persist and restore state of objects using the AlterEgo state machine}
   s.email = %q{paul.hieromnimon@gmail.com}
   s.extra_rdoc_files = ["README.rdoc", "lib/alter_ego/active_record_adapter.rb"]
-  s.files = ["Manifest", "README.rdoc", "Rakefile", "lib/alter_ego/active_record_adapter.rb", "test/adapter_test.rb", "test/create_traffic_signals.rb", "test/helper.rb", "test/traffic_signal.rb", "alter-ego-activerecord.gemspec"]
+  s.files = ["Manifest", "README.rdoc", "Rakefile", "alter-ego-activerecord.gemspec", "lib/alter_ego/active_record_adapter.rb", "test/adapter_test.rb", "test/create_traffic_signals.rb", "test/helper.rb", "test/traffic_signal.rb"]
   s.homepage = %q{http://github.com/pavlos/alter-ego-active-record}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Alter-ego-activerecord", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
