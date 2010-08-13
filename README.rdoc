@@ -1,0 +1,28 @@
+= AlterEgo-ActiveRecord
+
+== Motivation
+AlterEgo is my favorite Ruby state machine for the following reasons:
+  1. It's not dependent on ActiveRecord - it can be used on plain Ruby objects.
+  2. It most closely follows the GOF State Pattern because it allows for 
+     polymorphic behavior based on state.
+
+Out of the box, AlterEgo doesn't play nicely with ActiveRecord because it 
+stores state in <tt>@state</tt>, whereas subclasses of ActiveRecord::Base
+persist their <tt>attributes</tt> hash.
+
+This mixin overrides the AlterEgo's accessor methods for state to allow it 
+to be properly persisted to a database, as well as serialized/unserialized as
+json, yml, and xml.
+
+== Installation
+  gem install alter-ego-activerecord
+
+== Usage
+  Make sure the table your class maps to has a <tt>state</tt> column.
+ 
+  class Example < ActiveRecord::Base
+    include AlterEgo # include this first
+    include AlterEgo::ActiveRecordAdapter
+    
+    # Your code here
+  end

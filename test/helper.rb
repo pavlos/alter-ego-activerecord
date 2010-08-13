@@ -1,0 +1,10 @@
+require 'test/unit'
+require 'rubygems'
+gem 'activerecord'
+require 'active_record'
+ActiveRecord::Base.establish_connection(:adapter=>'sqlite3', :database=>'test/testdb.sqlite')
+gem 'alter-ego'
+require 'alter_ego'
+require 'alter_ego/active_record_adapter'
+require 'create_traffic_signals'
+require 'traffic_signal'
