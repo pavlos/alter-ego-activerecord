@@ -15,7 +15,10 @@ to be properly persisted to a database, as well as serialized/unserialized as
 json, yml, and xml.
 
 == Installation
+=== As a Ruby Gem 
   gem install alter-ego-activerecord
+=== OR as a Rails plugin
+  script/plugin install git://github.com/pavlos/alter-ego-active-record.git
 
 == Usage
   Make sure the table your class maps to has a <tt>state</tt> column.
