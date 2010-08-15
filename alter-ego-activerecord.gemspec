@@ -2,16 +2,16 @@
 
 Gem::Specification.new do |s|
   s.name = %q{alter-ego-activerecord}
-  s.version = "0.1.0"
+  s.version = "0.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Paul Hieromnimon"]
-  s.date = %q{2010-08-12}
+  s.date = %q{2010-08-14}
   s.description = %q{Adapter to allow ActiveRecord to persist and restore state of objects using the AlterEgo state machine}
   s.email = %q{paul.hieromnimon@gmail.com}
   s.extra_rdoc_files = ["README.rdoc", "lib/alter_ego/active_record_adapter.rb"]
-  s.files = ["Manifest", "README.rdoc", "Rakefile", "alter-ego-activerecord.gemspec", "lib/alter_ego/active_record_adapter.rb", "test/adapter_test.rb", "test/create_traffic_signals.rb", "test/helper.rb", "test/traffic_signal.rb"]
-  s.homepage = %q{http://github.com/pavlos/alter-ego-active-record}
+  s.files = ["Manifest", "README.rdoc", "Rakefile", "alter-ego-activerecord.gemspec", "init.rb", "lib/alter_ego/active_record_adapter.rb", "test/adapter_test.rb", "test/create_traffic_signals.rb", "test/helper.rb", "test/testdb.sqlite", "test/traffic_signal.rb"]
+  s.homepage = %q{http://github.com/pavlos/alter-ego-activerecord}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Alter-ego-activerecord", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{alter-ego-activerecord}

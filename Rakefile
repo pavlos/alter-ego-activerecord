@@ -2,7 +2,7 @@ require 'rubygems'
 require 'rake'
 require 'echoe'
 
-Echoe.new('alter-ego-activerecord', '0.1.0') do |p|
+Echoe.new('alter-ego-activerecord', '0.1.1') do |p|
   p.description = "Adapter to allow ActiveRecord to persist and restore state of objects using the AlterEgo state machine"
   p.author = "Paul Hieromnimon"
   p.email = "paul.hieromnimon@gmail.com"

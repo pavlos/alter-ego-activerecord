@@ -2,6 +2,7 @@ Manifest
 README.rdoc
 Rakefile
 alter-ego-activerecord.gemspec
+init.rb
 lib/alter_ego/active_record_adapter.rb
 test/adapter_test.rb
 test/create_traffic_signals.rb
