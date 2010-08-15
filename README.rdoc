@@ -18,14 +18,20 @@ json, yml, and xml.
 === As a Ruby Gem 
   gem install alter-ego-activerecord
 === OR as a Rails plugin
-  script/plugin install git://github.com/pavlos/alter-ego-active-record.git
+  script/plugin install git://github.com/pavlos/alter-ego-activerecord.git
 
 == Usage
-  Make sure the table your class maps to has a <tt>state</tt> column.
- 
+Make sure the table your class maps to has a <tt>state</tt> column of type
+varchar, string, etc.
+
+  # you'll only need the following two lines if you're NOT using
+  # alter-ego-activerecord as a plugin
+  gem 'alter-ego-activerecord'
+  require 'alter_ego/active_record_adapter'
+
   class Example < ActiveRecord::Base
     include AlterEgo # include this first
     include AlterEgo::ActiveRecordAdapter
-    
+
     # Your code here
   end

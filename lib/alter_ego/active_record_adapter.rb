@@ -8,7 +8,7 @@ module AlterEgo
     end
 
     # rails needs this method to be defined for the
-    # class method after_find to be able to take a block
+    # class method after_initialize to be able to take a block
     # this is because of some performance optimization
     def after_initialize; end
 
