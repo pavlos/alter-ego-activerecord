@@ -16,11 +16,11 @@ module AlterEgo
     # in @attributes["state"] instead of @state
     def state=(identifier)
       # state needs to always be stored as a string - symbol serialization is strange
-      @attributes["state"] = identifier.to_s unless identifier.nil?
+      write_attribute("state", identifier.to_s)  unless identifier.nil?
     end
 
     def state
-      result = ( @attributes["state"] || self.class.default_state)
+      result = ( read_attribute("state") || self.class.default_state)
       result = result.to_sym unless result.nil?
       assert(result.nil? || self.class.states.keys.include?(result))
       result
